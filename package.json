@@ -4,7 +4,8 @@
   "description": "monorepo 模板",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "pnpm -r --parallel exec pnpm dev"
   },
   "repository": {
     "type": "git",
