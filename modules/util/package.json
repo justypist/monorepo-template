@@ -8,12 +8,6 @@
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
-  "keywords": [
-    "nodejs",
-    "util"
-  ],
-  "author": "yongx",
-  "license": "NO LICENSE",
   "devDependencies": {
     "@template/type": "workspace:*"
   }
