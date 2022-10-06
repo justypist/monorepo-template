@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@controller/*": [
+        "controller/*"
+      ],
+      "@service/*": [
+        "service/*"
+      ],
+      "@util/*": [
+        "util/*"
+      ],
+      "@entity/*": [
+        "entity/*"
+      ],
+      "@middleware/*": [
+        "middleware/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
