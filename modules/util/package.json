@@ -1,0 +1,20 @@
+{
+  "name": "@template/util",
+  "version": "1.0.0",
+  "description": "util module",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "nodejs",
+    "util"
+  ],
+  "author": "yongx",
+  "license": "NO LICENSE",
+  "devDependencies": {
+    "@template/type": "workspace:*"
+  }
+}

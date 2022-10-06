@@ -34,6 +34,12 @@ importers:
       webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_webpack@5.74.0
       webpack-merge: registry.npmjs.org/webpack-merge/5.8.0
 
+  modules/util:
+    specifiers:
+      '@template/type': workspace:*
+    devDependencies:
+      '@template/type': link:../type
+
 packages:
 
   registry.npmjs.org/@babel/code-frame/7.18.6:
