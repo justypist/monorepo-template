@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "target": "ES2015",
+    "lib": [
+      "DOM",
+      "ESNext",
+    ]
+  }
+}
