@@ -4,7 +4,10 @@
   "description": "monorepo 模板",
   "private": true,
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "rebase": "git checkout main && git pull origin main && git fetch --all && git fetch -p",
+    "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules/ dist",
+    "dev": "pnpm -r --parallel exec pnpm dev"
   },
   "repository": {
     "type": "git",
