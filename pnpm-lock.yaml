@@ -6,6 +6,8 @@ importers:
     specifiers:
       '@commitlint/cli': 17.1.2
       '@commitlint/config-conventional': 17.1.0
+      '@tsconfig/node16': 1.0.3
+      '@types/node': 18.8.2
       '@typescript-eslint/eslint-plugin': 5.39.0
       '@typescript-eslint/parser': 5.39.0
       eslint: 8.24.0
@@ -15,6 +17,8 @@ importers:
     devDependencies:
       '@commitlint/cli': registry.npmjs.org/@commitlint/cli/17.1.2
       '@commitlint/config-conventional': registry.npmjs.org/@commitlint/config-conventional/17.1.0
+      '@tsconfig/node16': registry.npmjs.org/@tsconfig/node16/1.0.3
+      '@types/node': registry.npmjs.org/@types/node/18.8.2
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/5.39.0_xyciw6oqjoiiono4dhv3uhn5my
       '@typescript-eslint/parser': registry.npmjs.org/@typescript-eslint/parser/5.39.0_ypn2ylkkyfa5i233caldtndbqa
       eslint: registry.npmjs.org/eslint/8.24.0
@@ -396,6 +400,12 @@ packages:
     resolution: {integrity: sha512-vQAnaReSQkEDa8uwAyQby8bYGKu84R/deEc6mg5T8fX6gzCn8QW6rziSgsti1fNvsrswKUKPnVTi7uoB+u62Mw==, registry: https://npmreg.proxy.ustclug.org/, tarball: https://registry.npmjs.org/@types/node/-/node-14.18.31.tgz}
     name: '@types/node'
     version: 14.18.31
+    dev: true
+
+  registry.npmjs.org/@types/node/18.8.2:
+    resolution: {integrity: sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==, registry: https://npmreg.proxy.ustclug.org/, tarball: https://registry.npmjs.org/@types/node/-/node-18.8.2.tgz}
+    name: '@types/node'
+    version: 18.8.2
     dev: true
 
   registry.npmjs.org/@types/normalize-package-data/2.4.1:
