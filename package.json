@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
+    "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules/ dist",
     "dev": "pnpm -r --parallel exec pnpm dev"
   },
   "repository": {
