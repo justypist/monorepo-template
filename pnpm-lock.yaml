@@ -57,7 +57,6 @@ importers:
       webpack-node-externals: 3.0.0
     dependencies:
       '@koa/router': registry.npmjs.org/@koa/router/12.0.0
-      '@template/type': link:../type
       '@template/util': link:../util
       koa: registry.npmjs.org/koa/2.13.4
       koa-body: registry.npmjs.org/koa-body/5.0.0
@@ -65,6 +64,7 @@ importers:
       sqlite3: registry.npmjs.org/sqlite3/5.1.1
       typeorm: registry.npmjs.org/typeorm/0.3.10_sqlite3@5.1.1
     devDependencies:
+      '@template/type': link:../type
       '@types/koa': registry.npmjs.org/@types/koa/2.13.5
       '@types/koa2-cors': registry.npmjs.org/@types/koa2-cors/2.0.2
       '@types/koa__router': registry.npmjs.org/@types/koa__router/12.0.0
@@ -1252,7 +1252,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       webpack: registry.npmjs.org/webpack/5.74.0_webpack-cli@4.10.0
-      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
+      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_webpack@5.74.0
     dev: true
 
   registry.npmjs.org/@webpack-cli/info/1.5.0_webpack-cli@4.10.0:
@@ -1264,7 +1264,7 @@ packages:
       webpack-cli: 4.x.x
     dependencies:
       envinfo: registry.npmjs.org/envinfo/7.8.1
-      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
+      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_webpack@5.74.0
     dev: true
 
   registry.npmjs.org/@webpack-cli/serve/1.7.0_ud4agclah7rahur6ntojouq57y:
@@ -6994,7 +6994,7 @@ packages:
       tapable: registry.npmjs.org/tapable/2.2.1
       terser-webpack-plugin: registry.npmjs.org/terser-webpack-plugin/5.3.6_webpack@5.74.0
       watchpack: registry.npmjs.org/watchpack/2.4.0
-      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
+      webpack-cli: registry.npmjs.org/webpack-cli/4.10.0_webpack@5.74.0
       webpack-sources: registry.npmjs.org/webpack-sources/3.2.3
     transitivePeerDependencies:
       - '@swc/core'
