@@ -1,3 +1,4 @@
+import { NodeConfig } from 'config';
 import { randomUUID } from 'crypto';
 import { mkdir, writeFile } from 'fs/promises';
 import { Middleware } from 'koa';
@@ -14,7 +15,7 @@ interface LogObject {
   cost: number;
   req: {
     url: string;
-    query: Record<string, any>;
+    query: Record<string, unknown>;
     headers: Record<string, string>;
   },
   res: {
@@ -22,9 +23,6 @@ interface LogObject {
     body: unknown;
   }
 }
-
-const MaxLogQuqueLength = 10;
-const LogQuqueCacheTime = 60 * 1000;
 
 let LogQuque: LogObject[] = [];
 
@@ -43,12 +41,12 @@ const writeLog = async () => {
 
 const log = (logObj: LogObject) => {
   LogQuque.push(logObj);
-  if (LogQuque.length >= MaxLogQuqueLength) {
+  if (LogQuque.length >= NodeConfig.logger.maxQuqueLength) {
     writeLog();
   }
 };
 
-setInterval(writeLog, LogQuqueCacheTime);
+setInterval(writeLog, NodeConfig.logger.cacheQuqueTime);
 
 export const logger: Middleware = async (ctx, next) => {
   const logId = randomUUID();
