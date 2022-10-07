@@ -1,5 +1,5 @@
+import { NodeConfig } from '@config';
 import { User } from '@entity/user.entity';
-import { NodeConfig } from 'config';
 import { Middleware } from 'koa';
 import { DataSource } from 'typeorm';
 

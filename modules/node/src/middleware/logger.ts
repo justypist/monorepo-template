@@ -1,4 +1,4 @@
-import { NodeConfig } from 'config';
+import { NodeConfig } from '@config';
 import { randomUUID } from 'crypto';
 import { mkdir, writeFile } from 'fs/promises';
 import { Middleware } from 'koa';

@@ -28,6 +28,7 @@ module.exports = merge(baseConfig, {
       '@entity': resolve('src', 'entity'),
       '@util': resolve('src', 'util'),
       '@middleware': resolve('src', 'middleware'),
+      "@config": resolve('src', 'config.ts'),
     },
   },
 });
