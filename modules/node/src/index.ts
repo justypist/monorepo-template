@@ -2,6 +2,7 @@ import { userConrtoller } from '@controller/user.controller';
 import { database } from '@middleware/database';
 import { catcher } from '@middleware/error';
 import { logger } from '@middleware/logger';
+import { NodeConfig } from 'config';
 import Koa from 'koa';
 import KoaBody from 'koa-body';
 import Koa2Cors from 'koa2-cors';
@@ -27,4 +28,6 @@ app.use(async ctx => {
 
 app.addListener('error', console.log);
 
-app.listen(2000);
+app.listen(NodeConfig.server.port, NodeConfig.server.host, () => {
+  console.log('app started.');
+});

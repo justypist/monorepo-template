@@ -1,14 +1,9 @@
 import { User } from '@entity/user.entity';
+import { NodeConfig } from 'config';
 import { Middleware } from 'koa';
-import { resolve } from 'path';
 import { DataSource } from 'typeorm';
 
-const dataSource = new DataSource({
-  type: 'sqlite',
-  database: resolve(__dirname, './template.db'),
-  entities: [User],
-  synchronize: true
-});
+const dataSource = new DataSource(NodeConfig.database);
 
 dataSource
   .initialize()
