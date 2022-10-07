@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "module type",
   "scripts": {
-    "dev": "echo @template/type"
+    "dev": "echo @template/type dev",
+    "build": "echo @template/type build"
   }
 }
