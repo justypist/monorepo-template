@@ -13,5 +13,7 @@ jobs:
           node-version: '16.x'
           cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
+      - name: install pnpm
+        run: npm install --location=global pnpm && pnpm setup
       - name: Install dependencies
         run: pnpm install
