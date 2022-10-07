@@ -20,6 +20,9 @@
       ],
       "@middleware/*": [
         "middleware/*"
+      ],
+      "@config": [
+        "config.ts"
       ]
     }
   },
