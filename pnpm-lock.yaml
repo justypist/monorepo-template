@@ -45,6 +45,7 @@ importers:
       '@types/node': '*'
       koa: 2.13.4
       koa-body: 5.0.0
+      koa-statics: 0.0.5
       koa2-cors: 2.0.6
       nodemon-webpack-plugin: 4.8.1
       sqlite3: 5.1.1
@@ -60,6 +61,7 @@ importers:
       '@template/util': link:../util
       koa: registry.npmjs.org/koa/2.13.4
       koa-body: registry.npmjs.org/koa-body/5.0.0
+      koa-statics: registry.npmjs.org/koa-statics/0.0.5
       koa2-cors: registry.npmjs.org/koa2-cors/2.0.6
       sqlite3: registry.npmjs.org/sqlite3/5.1.1
       typeorm: registry.npmjs.org/typeorm/0.3.10_sqlite3@5.1.1
@@ -4085,6 +4087,13 @@ packages:
     dependencies:
       co: registry.npmjs.org/co/4.6.0
       koa-compose: registry.npmjs.org/koa-compose/4.1.0
+    dev: false
+
+  registry.npmjs.org/koa-statics/0.0.5:
+    resolution: {integrity: sha512-B7hkbC0F13zP4OZ4kB3xAY5BVKYTGTyg/w1/bkbO3Urwnq4get5vg2WG7skuteJETzQtnxetsHAGukndG1BJdg==, registry: https://npmreg.proxy.ustclug.org/, tarball: https://registry.npmjs.org/koa-statics/-/koa-statics-0.0.5.tgz}
+    name: koa-statics
+    version: 0.0.5
+    engines: {node: '>=4.0.0'}
     dev: false
 
   registry.npmjs.org/koa/2.13.4:

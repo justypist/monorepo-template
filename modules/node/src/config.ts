@@ -25,7 +25,8 @@ export const NodeConfig: NodeConfigProps = {
     type: 'sqlite',
     database: resolve(__dirname, './template.db'),
     entities: [User],
-    synchronize: process.env.mode === 'development',
+    // synchronize: process.env.mode === 'development',
+    synchronize: true,
   },
   logger: {
     maxQuqueLength: 10,
