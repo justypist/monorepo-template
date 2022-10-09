@@ -16,6 +16,7 @@ const staticFiles = KoaStatics(staticFilePath);
 
 const app = new Koa();
 
+app.use(staticFiles);
 app.use(logger);
 app.use(catcher);
 app.use(bodyParser);
