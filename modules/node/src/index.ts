@@ -16,13 +16,13 @@ const staticFiles = KoaStatics(staticFilePath);
 
 const app = new Koa();
 
+app.use(staticFiles);
 app.use(logger);
 app.use(catcher);
 app.use(bodyParser);
 app.use(Koa2Cors({ origin: '*' }));
 app.use(database);
 
-app.use(staticFiles);
 app.use(userConrtoller.prefix('/user').routes());
 
 app.use(async ctx => {
