@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { DataSourceOptions } from 'typeorm';
 
 interface NodeConfigProps {
+  mode: 'development' | 'production';
   server: {
     host: string;
     port: number;
@@ -15,6 +16,7 @@ interface NodeConfigProps {
 }
 
 export const NodeConfig: NodeConfigProps = {
+  mode: process.env.mode as 'development' | 'production',
   server: {
     host: '0.0.0.0',
     port: 2000,
@@ -23,7 +25,7 @@ export const NodeConfig: NodeConfigProps = {
     type: 'sqlite',
     database: resolve(__dirname, './template.db'),
     entities: [User],
-    synchronize: true
+    synchronize: process.env.mode === 'development',
   },
   logger: {
     maxQuqueLength: 10,
