@@ -1,7 +1,13 @@
+const { EnvironmentPlugin } = require('webpack');
 const { merge } = require('webpack-merge');
 const baseConfig = require('./webpack.common');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  devtool: 'source-map',
+  // devtool: 'hidden-source-map',
+  plugins: [
+    new EnvironmentPlugin({
+      'mode': 'production',
+    }),
+  ]
 });
