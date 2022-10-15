@@ -8,7 +8,9 @@
     "rebase": "git checkout main && git pull origin main && git fetch --all && git fetch -p",
     "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules/ dist",
     "dev": "pnpm -r --parallel exec pnpm dev",
-    "build": "pnpm -r --parallel exec pnpm build"
+    "build": "pnpm -r --parallel exec pnpm build",
+    "start": "pnpm install && pnpm build && pm2 start ecosystem.config.js",
+    "stop": "pm2 stop all"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "eslint": "8.24.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
+    "pm2": "5.2.2",
     "ts-loader": "9.4.1",
     "typescript": "4.8.4",
     "webpack": "5.74.0",
